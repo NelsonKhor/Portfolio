@@ -1,0 +1,238 @@
+:root {
+    background-color: #111d4a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* _____________________ navigation bar _____________________ */
+.navbar {
+    background-color: #1839b1;
+    color: #ffffff;
+    height: 4rem;
+}
+
+.navbar-list {    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0 10%;
+    padding: 0;
+    height: 100%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.navbar-anchor {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+/* _____________________ hero section _____________________ */                                  
+.hero-container {
+    background-color: #111d4a;
+    color: #ffffff;
+    height: 95vh;
+    display: flex;
+    margin: 0 10%; /* swap out justify content */
+    align-items: center;
+    position: relative;
+}
+
+.hero-wrapper {
+    display: flex;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2.5rem;
+    font-weight: bold;
+    flex: 2 1 auto;
+}
+
+.hero-typewriter {
+    position: relative;
+    flex: 0.7 1 auto;
+}
+
+#hero-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    background-color: #406e8e;
+    color: white;
+    border: #406e8e;
+}
+
+#hero-button:hover {
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 0 0 400px;
+    align-self: center;
+}
+
+.hero-image > img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 15px 15px 15px #1839b1;
+}
+
+#mytext {
+    display: inline-block;
+    vertical-align: middle;
+    color: #cbf7ed;
+    height: 6rem;
+}
+
+#mycursor {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 5px;
+    height: 2rem;
+    background-color: #cbf7ed;
+    color: white;
+    animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #cbf7ed;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .hero-wrapper{
+    }
+    #hero-button {
+        margin-top: 40px;
+    }
+    .hero-image > img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .hero-wrapper {
+        flex-direction: column;
+    }
+    
+    .hero-title {
+        font-size: 5vw;
+        order: 2;
+        justify-content: flex-start;
+    }
+    
+    .hero-typewriter {
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    .hero-image {
+        flex: 0 0 auto;
+        justify-content: center;
+        align-self: center;
+        order: 1;
+        display: flex;
+    }
+    
+    .hero-image > img {
+        width: 100%;
+        max-width: 70%;
+        max-height: auto;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    #mytext {
+        height: 5vh;
+    }
+}
+
+/* _____________________ about me section _____________________ */
+.about-me {
+    background-color: #8ea8c3;
+    color: #161925;
+    height: 90vh;
+}
+
+.about-container {
+    background-color: #111d4a;
+    color: #ffffff;
+    height: 100%;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+/* _____________________ tech stack section _____________________ */   
+.tech-stack {
+    background-color: #406e8e;
+    color: #cbf7ed;
+    height: 60vh;
+}
+
+.project {
+    background-color: #8ea8c3;
+    color: #161925;
+    height: 60vh;
+}
+
+.experience {
+    background-color: #406e8e;
+    color: #cbf7ed;
+    height: 60vh;
+}
+
+.contact {
+    background-color: #8ea8c3;
+    color: #161925;
+    height: 90vh;
+}
+
+.my-footer {
+    background-color: #23395B;
+    color: #cbf7ed;
+    height: 8rem;
+}
