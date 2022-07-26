@@ -170,9 +170,9 @@ a:visited {
 
 /* _____________________ about me section _____________________ */
 .about-me {
-    background-color: #8ea8c3;
+    background-color: #111d4a;
     color: #161925;
-    height: 90vh;
+    height: 100vh;
 }
 
 .about-container {
@@ -182,30 +182,55 @@ a:visited {
     margin: 0 10%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .about-title {
     font-size: 2rem;
     font-weight: bolder;
-    margin: 20px 0;
+    margin: 50px 0 40px 0;
 }
 
 .about-content {
     display: flex;
-    justify-content: space-between;
 }
 
 .about-img {
     flex: 1;
+    display: flex;
+}
+
+.about-img > img {
+    max-width: 70%;
+    margin: auto;
+    box-shadow: 15px 15px 15px #1839b1;
 }
 
 .about-text {
     flex: 1;
-    padding: 20px;
-    font-size: 1.2rem;
+    padding: 30px;
+    font-size: 1rem;
 }
+
+@media screen and (max-width: 912px) {
+    .about-container {
+        margin: 1%;
+    }
+    .about-title {
+        margin: 0 0 30px 0;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .about-img > img {
+        max-width: 70%;
+    }
+    .about-text {
+        font-size: 0.8rem;
+    }
+}
+
 /* _____________________ tech stack section _____________________ */   
 .tech-stack {
     background-color: #406e8e;
