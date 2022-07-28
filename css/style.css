@@ -137,18 +137,6 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 412px) {
-    .hero-wrapper{
-    }
-    #hero-button {
-        margin-top: 40px;
-    }
-    .hero-image > img {
-        max-width: 100%;
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 912px) {
     .hero-wrapper {
         flex-direction: column;
@@ -175,7 +163,7 @@ a:visited {
     
     .hero-image > img {
         width: 100%;
-        max-width: 70%;
+        max-width: 60%;
         max-height: auto;
         justify-content: center;
         align-items: center;
@@ -186,6 +174,19 @@ a:visited {
         height: 5vh;
     }
 }
+
+@media screen and (max-width: 414px) {
+    .hero-wrapper{
+    }
+    #hero-button {
+        margin-top: 40px;
+    }
+    .hero-image > img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 
 /* _____________________ about me section _____________________ */
 .about-me {
@@ -200,6 +201,7 @@ a:visited {
     margin: 0 10%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     position: relative;
 }
@@ -240,9 +242,10 @@ a:visited {
     }
     .about-content {
         flex-direction: column;
+        flex-shrink: 1;
     }
     .about-img > img {
-        max-width: 70%;
+        max-height: 70vh;
     }
     .about-text {
         font-size: 0.8rem;
@@ -269,7 +272,7 @@ a:visited {
     font-weight: bolder;
     margin: 30px 0 30px 0;
     justify-self: center;
-    align-self: center;
+    align-self: flex-end;
 }
 
 /* _____________________ project section _____________________ */   
