@@ -4,7 +4,7 @@ A portfolio website created to showcase my skills, projects and also my contact 
 
 ## Link
 
-Link to my portfolio: [cnkhor.dev](www.cnkhor.dev)
+[Link to my portfolio](https://cnkhor.dev/)
 
 ## Features
 
