@@ -16,7 +16,9 @@ A portfolio website created to showcase my skills, projects and also my contact 
 - HTML
 - CSS
 - JavaScript
+- GitHub Pages
 
 ## Author
 
 Nelson Khor &copy; 2022
+Version 1.0
