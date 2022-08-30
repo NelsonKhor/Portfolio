@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="img/png" href="img/rocket.png" />
+    <script type="text/javascript" src="js/myscripts.js" defer></script>
     <!--Google Fonts API-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,59 +22,54 @@
                     <div class="navbar-icon">
                         <img src="img/rocket.png">
                     </div>
-                    <ul class="navbar-list">
-                        <li><a class="navbar-anchor" href="">Home</a></li>
-                        <li><a class="navbar-anchor" href="">About</a></li>
-                        <li><a class="navbar-anchor" href="">Tech Stack</a></li>
-                        <li><a class="navbar-anchor" href="">Project</a></li>
-                        <li><a class="navbar-anchor" href="">Work</a></li>
-                        <li><a class="navbar-anchor" href="">Contact</a></li>
-                    </ul>
+                    <div class="navbar-menu">
+                        <button class="navbar-button"></button>
+                        <ul class="navbar-list">
+                            <li><a class="navbar-item" href="">Home</a></li>
+                            <li><a class="navbar-item" href="">About</a></li>
+                            <li><a class="navbar-item" href="">Tech Stack</a></li>
+                            <li><a class="navbar-item" href="">Project</a></li>
+                            <li><a class="navbar-item" href="">Work</a></li>
+                            <li><a class="navbar-item" href="">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
         
         <header>
             <div class="hero-container">
-                <div class="hero-wrapper">
-                    <div class="hero-title">
-                        <div class="hero-typewriter">Hey there,</br>
-                            I'm Nelson</br>
-                            <div id="mytext">
-                                <div id="mycursor">
-                                    <!-- Note: The blinking cursor doesn't work inside a div
-                                    Something to work on -->
-                                </div>
+                <div class="hero-image">
+                    <img src="img/me.jpg">
+                </div>
+                <div class="hero-title">
+                    <div class="hero-typewriter">Hey there,</br>
+                        I'm Nelson</br>
+                        <div id="mytext">
+                            <div id="mycursor">
                             </div>
                         </div>
-                        <button id="hero-button">Let's Chat</button>
                     </div>
-                    <div class="hero-image">
-                        <img src="img/me.jpg">
-                    </div>
+                    <button id="hero-button">Let's Chat</button>
                 </div>
             </div>
         </header>
 
         <section class="about-me">
             <div class="about-container">
-                <div class="about-title">
-                    About Me
+                <div class="all-title">
+                    About Me <hr>
                 </div>
                 <div class="about-content">
                     <div class="about-img">
                         <img src="img/me2.jpg">
                     </div>
                     <div class="about-text">
-                        My name is Chuan-Nam Khor, but I go by Nelson. I am a self-taught web developer. 
-                        After graduated with an engineering degree, 
-                        I started working in the field of workplace safety and health, but I discovered that this may not be my true north in the long run. 
-                        I decided to switch my career into I.T. and started learning web development and frameworks on my own. </br>
-                        Currently, I am actively seeking for an entry-level position in full stack web development. 
-                        I am also open to building landing page for local businesses. 
+                        I am a self-taught web developer. </br> </br>
+                        After graduated with an engineering degree, I started working in the field of workplace safety and health, but I discovered that this may not be my true north in the long run. 
+                        I decided to switch my career into I.T. and started learning web development and frameworks on my own. </br></br>
+                        Currently, I am actively seeking for an entry-level position in full stack web development. I am also open to building landing page for local businesses. </br> </br>
                         Check out the web applications I have built below. If you like what you see and are interested, shoot me an email and we can talk!
-                        Thank you!
-
                     </div>
                 </div>
             </div>
@@ -81,11 +77,10 @@
 
         <section class="tech-stack">
             <div class="tech-container">
-                <div class="tech-title">
-                    My Tech-Stack
+                <div class="all-title">
+                    My Tech-Stack <hr>
                 </div>
                 <div class="known-tech">
-                    <div>COMFORTABLE</div>
                     <ul class="tech-list">
                         <li class="tech-card">
                             <img src="img/logo/html.png">
@@ -109,10 +104,10 @@
                             <img src="img/logo/node-js.png">
                         </li>
                         <li class="tech-card">
-                            <img src="img/logo/react.png">
+                            <img src="img/logo/react.svg">
                         </li>
                         <li class="tech-card">
-                            <img src="img/logo/mysql.png">
+                            <img src="img/logo/postgresql.svg">
                         </li>
                     </ul>
                 </div>
@@ -121,28 +116,55 @@
 
         <section class="project">
             <div class="project-container">
-                <div class="project-title">
-                    project
-                    <div class="marvelous"></div>
+                <div class="all-title">
+                    My Project <hr>
+                </div>
+                <div class="project-wrapper">
+                    <img src="./img/mv.png">
+                </div>
+                <div class="project-wrapper">
+                    <img src="./img/calculator.png">
+                </div>
+                <div class="project-wrapper">
+                    <img src="./img/etch-a-sketch.png">
                 </div>
             </div>
         </section>
-        
+
         <section class="contact">
-            contact me
+            <div class="contact-container">
+                <div class="all-title">
+                    Contact Me <hr>
+                </div>
+                <form>
+                    <div>
+                        <label>Name</label>
+                        <input>
+                    </div>
+
+                    <div>
+                        <lable>Email</lable>
+                        <input>
+                    </div>
+                     
+                    <div>
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                </form>
+            </div>
         </section>
-        
+
         <footer class="my-footer">
             <div class="footer-container">
                 <div class="social-media">
-                    Social Media Icon
+                    <a href="https://github.com/NelsonKhor"><img class="footer-logo" src="./img/github-black.svg"></a>
+                    <a href="https://www.linkedin.com/in/nelsonkhor/"><img class="footer-logo" src="./img/linkedin-black.svg"></a>
                 </div>
                 <div class="copyright">
-                    Designed & Built by Nelson Khor
+                    Designed & Built by Nelson Khor &copy; 2022
                 </div>
             </div>
         </footer>
     </main>
-    <script type="text/javascript" src="js/myscripts.js"></script>
 </body>
-</html>

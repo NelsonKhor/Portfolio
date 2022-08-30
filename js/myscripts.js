@@ -1,8 +1,10 @@
-/* The blinking cursor doesn't work inside a div */
+/* Hamburger Menu */
+function showNav() {
+  const hamburger = document.getElementById("hamburger");
+}
 
-/* Content for Auto-typing */ 
-
-let heroContent = [
+/* Auto-typing */ 
+const heroContent = [
     "a Self-Taught Web Developer",
     "a Tech Enthusiast",
     "a Mechanical Engineer",
@@ -11,17 +13,15 @@ let heroContent = [
     "a Weight Lifter"
 ];
 
-/* Declare Variables */
-
+// Declare variables
 let myPart = 0;
 let myIndex = 0;
 let Interval;
-var blink = true;
+let blink = true;
 let myElement = document.getElementById("mytext");
 let myCursor = document.getElementById("mycursor");
 
-/* Auto-typing Function */
-
+// Function: Type out array content
 function Type() {
     let text = heroContent[myPart].substring(0, myIndex+1);
     myElement.innerHTML = text + (myCursor.innerHTML = '|'); /* temporary solution for the blinker*/ 
@@ -36,8 +36,7 @@ function Type() {
     }
 }
 
-/* Delete Function */
-
+// Function: Delete content
 function Delete() {
 	let text =  heroContent[myPart].substring(0, myIndex - 1);
 	myElement.innerHTML = text + '_';
@@ -69,4 +68,5 @@ window.setInterval(function () {
     }
   }, 400)
 
+// Default typing interval set at 100ms
 Interval = setInterval(Type,100);
