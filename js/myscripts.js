@@ -1,8 +1,3 @@
-/* Hamburger Menu */
-function showNav() {
-  const hamburger = document.getElementById("hamburger");
-}
-
 /* Auto-typing */ 
 const heroContent = [
     "a Self-Taught Web Developer",

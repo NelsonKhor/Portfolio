@@ -11,7 +11,16 @@ body {
     background-color: #111d4a;
 }
 
+main {
+    position: relative;
+}
 /* _____________________ navigation bar _____________________ */
+
+nav {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
 
 .navbar {
     background-color: #1839b1;
