@@ -34,7 +34,7 @@ body {
     padding: 9px;
 }
 
-.navbar-icon > img {
+.navbar-icon > a > img {
     max-height: 100%;
     max-width: 100%;
 }
@@ -69,19 +69,14 @@ body {
     padding: 0;
     margin: 0;
     right: 0;
-    top: 100%;
-    list-style-type: none;
     background-color: #16339e;
     min-width: 160px;
     z-index: 1;
     display: none;
 }
 
-.navbar-list > li {
+.navbar-list > a {
     min-width: 100vw;
-}
-
-.navbar-item {
     text-decoration: none;
     color: white;
     text-align: center;
@@ -91,8 +86,16 @@ body {
     padding: 15px 0;
 }
 
-.navbar-menu > button:focus + .navbar-list{
+.navbar-list a:hover {
+    background-color: #406e8e;
+}
+
+.navbar-menu:hover .navbar-list{
     display: block;
+}
+
+.navbar-menu:hover .navbar-button {
+    background-color: #23395B;
 }
 
 a:visited {
@@ -219,7 +222,7 @@ header {
 .about-text {
     text-align: center;
     padding: 5px;
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 /* _____________________ tech stack section _____________________ */   
