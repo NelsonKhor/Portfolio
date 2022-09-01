@@ -65,3 +65,26 @@ window.setInterval(function () {
 
 // Default typing interval set at 100ms
 Interval = setInterval(Type,100);
+
+/* Form Validation */
+const userName = document.getElementById("name");
+const userEmail = document.getElementById("email");
+const regexName = /^[a-zA-Z ]*$/;
+const regexEmail = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+
+function inputValidate(field,regex){
+  if(regex.test(field.value)){
+    console.log('valid');
+    field.className = 'valid';
+  } else {
+    console.log('invalid');
+    field.className = 'invalid';
+  }
+}
+
+userName.addEventListener('keyup', (e) => {
+  inputValidate(e.target,regexName);
+});
+userEmail.addEventListener('keyup', (e) => {
+  inputValidate(e.target,regexEmail);
+});
