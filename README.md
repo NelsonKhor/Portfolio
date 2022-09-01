@@ -9,14 +9,15 @@ A portfolio website created to showcase my skills, projects and also my contact 
 ## Features
 
 1. Auto-typing feature on the hero section written in vanilla JavaScript
-1. Responsive design for mobile and desktop
+1. Responsive design for mobile
+1. Working contact form (via Netlify) with validation
 
 ## Technology
 
 - HTML
 - CSS
 - JavaScript
-- GitHub Pages
+- ~~GitHub Pages~~ &rarr; Netlify
 
 ## Author
 
