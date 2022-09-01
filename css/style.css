@@ -375,6 +375,11 @@ header {
     position: relative;
 }
 
+.contact-info {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
 .contact-container > form {
     width: 100%;
     height: auto;
@@ -390,15 +395,21 @@ header {
     min-width: 100%;
 }
 
-.label-wrapper > input[type=text] {
-
-}
-
 .contact-input{
     border-radius: 5px;
     width: 100%;
     margin-bottom: 1rem;
     font-family: 'Poppins', Arial, sans-serif;
+}
+
+input#name {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input#email {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 #message-send {
@@ -413,10 +424,12 @@ header {
 
 .valid {
     border: 3px solid rgb(1, 255, 1);
+    border-radius: 5px;
 }
 
 .invalid {
     border: 3px solid rgb(255, 1, 1);
+    border-radius: 5px;
 }
 
 textarea:focus, input:focus{
