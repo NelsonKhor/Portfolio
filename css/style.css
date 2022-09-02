@@ -301,6 +301,39 @@ header {
     font-size: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+    .all-title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about-container {
+        margin: 0 8%;
+    }
+    
+    .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img {
+        margin: 0;
+        width: 50%;
+    }
+
+    .about-img > img {
+        max-width: 400px;
+        width: 80%;
+    }
+
+    .about-text {
+        text-align: left;
+        width: 50%;
+    }
+}
+
 /* _____________________ tech stack section _____________________ */   
 .tech-stack {
     background-color: #111d4a;
