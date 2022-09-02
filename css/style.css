@@ -524,7 +524,21 @@ header {
     margin-bottom: 2rem;
 }
 
-.contact-container > form {
+.contact-social {
+    display: flex;
+    margin: 2rem 0;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-social > a > img {
+    height: 36px;
+    width: 36px;
+    filter: invert(100%) sepia(0%) saturate(6%) hue-rotate(208deg) brightness(103%) contrast(106%);
+}
+
+.contact-wrapper > form {
     width: 100%;
     height: auto;
     margin-bottom: 32px;
