@@ -94,7 +94,7 @@ let topBtn = document.getElementById("scrollToTopBtn");
 window.onscroll = function() {scrollUp()};
 
 function scrollUp() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
     topBtn.style.display = "block";
   } else {
     topBtn.style.display = "none";
