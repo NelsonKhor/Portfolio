@@ -88,3 +88,20 @@ userName.addEventListener('keyup', (e) => {
 userEmail.addEventListener('keyup', (e) => {
   inputValidate(e.target,regexEmail);
 });
+
+/* Scroll to Top */
+let topBtn = document.getElementById("scrollToTopBtn");
+window.onscroll = function() {scrollUp()};
+
+function scrollUp() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
