@@ -115,41 +115,52 @@
         <section id="project" class="project">
             <div class="project-container">
                 <div class="all-title">
-                    My Project <hr>
+                    My Projects <hr>
                 </div>
-                <div class="project-wrapper">
-                    <img src="./img/mv.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            Marvelous Vacation Landing Page
-                        </div>
-                        <div class="overlay-img">
-                            <a href="https://marvelous-vacation.com/"><img src="./img/web.svg"></a>
-                            <a href="https://github.com/NelsonKhor/marvelousvacation"><img src="./img/github-black.svg"></a>
+                <div class="project-wrapper-container">
+                    <div class="project-wrapper">
+                        <img src="./img/mv.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                Marvelous Vacation Landing Page
+                            </div>
+                            <div class="overlay-subtext">
+                                <!--project description-->
+                            </div>
+                            <div class="overlay-img">
+                                <a href="https://marvelous-vacation.com/"><img src="./img/web.svg"></a>
+                                <a href="https://github.com/NelsonKhor/marvelousvacation"><img src="./img/github-black.svg"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-wrapper">
-                    <img src="./img/calculator.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            JavaScript Calculator
-                        </div>
-                        <div class="overlay-img">
-                            <a href="https://nelsonkhor.github.io/calculator-js/"><img src="./img/web.svg"></a>
-                            <a href="https://github.com/NelsonKhor/calculator-js"><img src="./img/github-black.svg"></a>
+                    <div class="project-wrapper">
+                        <img src="./img/calculator.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                JavaScript Calculator
+                            </div>
+                            <div class="overlay-subtext">
+                                <!--project description-->
+                            </div>
+                            <div class="overlay-img">
+                                <a href="https://nelsonkhor.github.io/calculator-js/"><img src="./img/web.svg"></a>
+                                <a href="https://github.com/NelsonKhor/calculator-js"><img src="./img/github-black.svg"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-wrapper">
-                    <img src="./img/etch-a-sketch.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            JavaScript Etch-A-Sketch Pad
-                        </div>
-                        <div class="overlay-img">
-                            <a href="https://nelsonkhor.github.io/Etch-A-Sketch/"><img src="./img/web.svg">
-                            <a href="https://github.com/NelsonKhor/Etch-A-Sketch"><img src="./img/github-black.svg"></a>
+                    <div class="project-wrapper">
+                        <img src="./img/etch-a-sketch.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                JavaScript Etch-A-Sketch Pad
+                            </div>
+                            <div class="overlay-subtext">
+                                <!--project description-->
+                            </div>
+                            <div class="overlay-img">
+                                <a href="https://nelsonkhor.github.io/Etch-A-Sketch/"><img src="./img/web.svg">
+                                <a href="https://github.com/NelsonKhor/Etch-A-Sketch"><img src="./img/github-black.svg"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,29 +172,34 @@
                 <div class="all-title">
                     Contact Me <hr>
                 </div>
-                <div class="contact-info">
-                    You can reach out to me via my Linkedin or my email address.
-                    Or you can also send me a message with the contact form provided. Looking forward to chat with you!
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        You can reach out to me via my Linkedin or my email address.
+                        Or you can also send me a message with the contact form provided. Looking forward to chat with you!
+                        <div class="contact-social">
+                            
+                        </div>
+                    </div>
+                    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                        <div class="label-wrapper">
+                            <label>Name: <br>
+                            <input class="contact-input" type="text" name="name" id="name"/></label>
+                        </div>
+
+                        <div class="label-wrapper">
+                            <label>Email: <br>
+                            <input class="contact-input"type="email" name="email" id="email"/></label>
+                        </div>
+
+                        <div class="label-wrapper">
+                            <label>Message: <br>
+                            <textarea class="contact-input" name="message" rows="8"></textarea></label>
+                        </div>
+                        
+                        <div class="captcha-div" data-netlify-recaptcha="true"></div>
+                        <button id="message-send" type="submit">Send</button>
+                    </form>
                 </div>
-                <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-                    <div class="label-wrapper">
-                        <label>Name: <br>
-                        <input class="contact-input" type="text" name="name" id="name"/></label>
-                    </div>
-
-                    <div class="label-wrapper">
-                        <label>Email: <br>
-                        <input class="contact-input"type="email" name="email" id="email"/></label>
-                    </div>
-
-                    <div class="label-wrapper">
-                        <label>Message: <br>
-                        <textarea class="contact-input" name="message" rows="8"></textarea></label>
-                    </div>
-                    
-                    <div class="captcha-div" data-netlify-recaptcha="true"></div>
-                    <button id="message-send" type="submit">Send</button>
-                </form>   
             </div>
         </section>
     </main>

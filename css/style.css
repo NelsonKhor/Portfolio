@@ -273,6 +273,7 @@ header {
 .all-title {            /* reusable */
     font-size: 1.5rem;
     text-align: center;
+    text-decoration-color: white;
     font-weight: bolder;
     margin: 40px 0 40px 0;
 }
@@ -309,7 +310,7 @@ header {
 
 @media only screen and (min-width: 992px) {
     .about-container {
-        margin: 0 8%;
+        margin: 0 10%;
     }
     
     .about-content {
@@ -379,6 +380,24 @@ header {
     max-width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+    .tech-container {
+        margin: 0 10%;
+    }
+
+    .tech-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .tech-list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4rem;
+    }
+}
+
 /* _____________________ project section _____________________ */   
 .project {
     background-color: #111d4a;
@@ -421,7 +440,7 @@ header {
     right: 0;
     height: 100%;
     width: 100%;
-    transition: 0.5s ease-in;
+    transition: 0.25s ease-in;
     background-color: #111d4a;
     opacity: 0;
     display: flex;
@@ -434,6 +453,7 @@ header {
 .overlay-text {
     text-align: center;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .overlay-img {
@@ -453,6 +473,29 @@ header {
 .overlay:hover {
     opacity: 0.80;
     visibility: visible;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-container {
+        margin: 0 10%;
+    }
+
+    .overlay-subtext{
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .project-container {
+        margin: 0 15%;
+    }
+
+    .project-wrapper-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
 }
 
 /* _____________________ contact section _____________________ */  
@@ -540,6 +583,38 @@ textarea:focus, input:focus{
 .captcha-div {
     width: 100%;
     height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-container {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .contact-container {
+        margin: 0 12%;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+
+    .contact-info {
+        padding: 0 1rem;
+    }
+
+    .contact-info .contact-social{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .contact-wrapper > form {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 }
 
 /* _____________________ footer section _____________________ */  
