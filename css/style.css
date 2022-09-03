@@ -359,7 +359,7 @@ header {
     }
 
     .about-text {
-        text-align: left;
+        text-align: justify;
         width: 50%;
     }
 }
@@ -550,6 +550,7 @@ header {
 
 .contact-info {
     font-size: 1rem;
+    text-align: justify;
     margin-bottom: 2rem;
 }
 
